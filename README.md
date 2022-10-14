@@ -1,8 +1,8 @@
 # opensouce_1
 안녕하세요
 
-print("일반적인코드")
+일반적인 코드
 
-  code 2
+  tap을 이용한 코드
   
-code 3
+일반적인 코드
