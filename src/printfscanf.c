@@ -1,42 +1,42 @@
 #include <stdio.h>
 int main_printfscanf(void)
 {
-	// Á¤¼öÇü º¯¼ö¿¡ ´ëÇÑ ¿¡Á¦
+	// ì •ìˆ˜í˜• ë³€ìˆ˜ì— ëŒ€í•œ ì—ì œ 
 	/*int age = 12;
 	printf("%d\n", age);
 	age = 13;
 	printf("%d\n", age);*/
 
-	// ½Ç¼öÇü º¯¼ö¿¡ ´ëÇÑ ¿¹Á¦
+	// ì‹¤ìˆ˜í˜• ë³€ìˆ˜ì— ëŒ€í•œ ì˜ˆì œ
 	/*float f = 46.5f;
 	printf("%.2f\n", f);
 	double d = 4.428;
 	printf("%.2lf\n", d);*/
-	//const int YEAR = 2000; // »ó¼ö
-	//printf("ÅÂ¾î³­ ³âµµ : %d\n", YEAR);
+	//const int YEAR = 2000; // ìƒìˆ˜
+	//printf("íƒœì–´ë‚œ ë…„ë„ : %d\n", YEAR);
 	//YEAR = 2001;
 
 	//printf
-	// ¿¬»ê
+	// ì—°ì‚°
 	//int add = 3 + 7; // 10
 	//printf("3 + 7 = %d\n", add);
 	//printf("%d x %d = %d\n", 30, 79, 30 * 79);
 
 	// scanf
-	// Å°º¸µå ÀÔ·ÂÀ» ¹Ş¾Æ¼­ ÀúÀå
+	// í‚¤ë³´ë“œ ì…ë ¥ì„ ë°›ì•„ì„œ ì €ì¥
 	/*int input;
-	printf("°ªÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+	printf("ê°’ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 	scanf_s("%d", &input);
-	printf("ÀÔ·Â°ª : %d\n", input);*/
+	printf("ì…ë ¥ê°’ : %d\n", input);*/
 
 	/*int one, two, three;
-	printf("3°³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+	printf("3ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 	scanf_s("%d %d %d", &one, &two, &three);
-	printf("Ã¹¹øÂ° °ª : %d\n", one);
-	printf("µÎ¹øÂ° °ª : %d\n", two);
-	printf("¼¼¹øÂ° °ª : %d\n", three);*/
+	printf("ì²«ë²ˆì§¸ ê°’ : %d\n", one);
+	printf("ë‘ë²ˆì§¸ ê°’ : %d\n", two);
+	printf("ì„¸ë²ˆì§¸ ê°’ : %d\n", three);*/
 
-	// ¹®ÀÚ(ÇÑ ±ÛÀÚ), ¹®ÀÚ¿­(ÇÑ ±ÛÀÚ ÀÌ»óÀÇ ¿©·¯ ±ÛÀÚ)
+	// ë¬¸ì(í•œ ê¸€ì), ë¬¸ìì—´(í•œ ê¸€ì ì´ìƒì˜ ì—¬ëŸ¬ ê¸€ì)
 	/*char c = 'A';
 	printf("%c\n", c);*/
 
@@ -44,36 +44,36 @@ int main_printfscanf(void)
 	scanf_s("%s", str, sizeof(str));
 	printf("%s\n", str);*/
 
-	// ÇÁ·ÎÁ§Æ®
-	// °æÂû°üÀÌ ¹üÁËÀÚÀÇ Á¤º¸¸¦ ÀÔ¼ö (Á¶¼­ ÀÛ¼º)
-	// ÀÌ¸§? ³ªÀÌ? ¸ö¹«°Ô? Å°? ¹üÁË¸í?
+	// í”„ë¡œì íŠ¸ 
+	// ê²½ì°°ê´€ì´ ë²”ì£„ìì˜ ì •ë³´ë¥¼ ì…ìˆ˜ (ì¡°ì„œ ì‘ì„±)
+	// ì´ë¦„? ë‚˜ì´? ëª¸ë¬´ê²Œ? í‚¤? ë²”ì£„ëª…?
 	char name[256];
-	printf("ÀÌ¸§ÀÌ ¹¹¿¡¿ä? ");
+	printf("ì´ë¦„ì´ ë­ì—ìš”? ");
 	scanf_s("%s", name, sizeof(name));
 
 	int age;
-	printf("¸î»ìÀÌ¿¡¿ä? ");
+	printf("ëª‡ì‚´ì´ì—ìš”? ");
 	scanf_s("%d", &age);
 
 	float weight;
-	printf("¸ö¹«°Ô´Â ¸î kg ÀÌ¿¡¿ä? ");
+	printf("ëª¸ë¬´ê²ŒëŠ” ëª‡ kg ì´ì—ìš”? ");
 	scanf_s("%f", &weight);
 
 	double height;
-	printf("Å°´Â ¸î cm ÀÌ¿¡¿ä? ");
+	printf("í‚¤ëŠ” ëª‡ cm ì´ì—ìš”? ");
 	scanf_s("%lf", &height);
 
 	char what[256];
-	printf("¹«½¼ ¹üÁË¸¦ ÀúÁú·¶¾î¿ä? ");
+	printf("ë¬´ìŠ¨ ë²”ì£„ë¥¼ ì €ì§ˆë €ì–´ìš”? ");
 	scanf_s("%s", what, sizeof(what));
 
-	// Á¶¼­ ³»¿ë Ãâ·Â
-	printf("\n\n--- ¹üÁËÀÚ Á¤º¸ ---\n\n");
-	printf(" ÀÌ¸§		: %s\n", name);
-	printf(" ³ªÀÌ		: %d\n", age);
-	printf(" ¸ö¹«°Ô		: %.2f\n", weight);
-	printf(" Å°		: %.2lf\n", height);
-	printf(" ¹üÁË		: %s\n", what);
+	// ì¡°ì„œ ë‚´ìš© ì¶œë ¥
+	printf("\n\n--- ë²”ì£„ì ì •ë³´ ---\n\n");
+	printf(" ì´ë¦„		: %s\n", name);
+	printf(" ë‚˜ì´		: %d\n", age);
+	printf(" ëª¸ë¬´ê²Œ		: %.2f\n", weight);
+	printf(" í‚¤		: %.2lf\n", height);
+	printf(" ë²”ì£„		: %s\n", what);
 
 	return 0;
 }
