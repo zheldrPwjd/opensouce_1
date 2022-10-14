@@ -1,7 +1,7 @@
 # opensouce_1
 안녕하세요
 
-code 1
+print("일반적인코드")
 
   code 2
   
